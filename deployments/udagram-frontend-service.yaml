@@ -7,8 +7,6 @@ metadata:
 spec:
   ports:
   - name: "8080"
-    # port: 80
-    # targetPort: TCP
     port: 8080
     targetPort: 8080
   selector:
