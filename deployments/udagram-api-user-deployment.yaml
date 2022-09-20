@@ -15,6 +15,7 @@ spec:
       containers:
       - name: backend-user
         image: samueladekunle/udagram-api-user:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         resources:
@@ -29,3 +30,4 @@ spec:
             name: env-config
         - secretRef:
             name: env-secret
+      restartPolicy: Always
